@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 //Novos componentes devem ser importados aqui
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent //Novos componentes devem ser declarados aqui
+    ServerComponent,
+    ServersComponent //Novos componentes devem ser declarados aqui
   ],
   imports: [
     BrowserModule,
