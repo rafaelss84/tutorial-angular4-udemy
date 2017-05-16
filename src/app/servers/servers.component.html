@@ -15,6 +15,8 @@
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button> <!-->Maneira de fazer o property binding e o event binding</-->
 <!--<p>{{ allowNewServer }}</p>--> <!-->String Interpolation</!-->
-<p>{{ serverCreationStatus }}</p>
+<!--<p>{{ serverCreationStatus }}</p>-->
+<!--A estrela é usada porque a diretiva muda a estrutura do DOM-->
+<p *ngIf="serverCreated">Server was created, server name is {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
